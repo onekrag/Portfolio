@@ -1,0 +1,32 @@
+header.header.active
+	.header__top
+		a.header__top_link(href="/")
+			img.header__top_logo(src="img/logo.png", alt="Фото логотип")
+			p.header__top_descr Andrew Krasheninin		
+		.header__burger.active
+				span
+	nav.header__nav
+		ul.header__nav_list
+			li.header__nav_item
+				a.header__nav_link.btn(href="/") ПОРТФОЛИО
+			li.header__nav_item
+				a.header__nav_link.btn(href="/") СТЕК
+			li.header__nav_item
+				a.header__nav_link.btn(href="/") КОНТАКТЫ
+			li.header__nav_item
+				a.header__nav_link.btn(href="https://github.com/onekrag" target="blank") GITHUB
+			li.header__nav_item
+				a.header__nav_link.btn(href="https://kwork.ru/user/krashenininag" target="blank") KWORK
+	.header__social
+		a.header__social_link(href="https://vk.com/krag_one" target="blank")
+			+icon('vk', 'header__social_icon')
+			//- +icon('vk_hover', 'header__social_icon_hover')
+		a.header__social_link(href="https://www.instagram.com/krag_one/" target="blank")
+			+icon('insta', 'header__social_icon')
+			//- +icon('insta_hover', 'header__social_icon_hover')
+		a.header__social_link(href="https://t.me/krag_one" target="blank")
+			+icon('tlg', 'header__social_icon')
+			//- +icon('tlg_hover', 'header__social_icon_hover')
+		a.header__social_link(href="mailto:rumpel45@ya.ru" target="blank")
+			+icon('email', 'header__social_icon')
+			//- +icon('email_hover', 'header__social_icon_hover')

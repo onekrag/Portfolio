@@ -18,7 +18,7 @@ body
 	font-family: $primary_font
 	color: $primary_color
 	font-weight: 600
-	font-size: 36px
+	font-size: 24px
 body.lock
 	overflow: hidden
 summary
@@ -59,12 +59,16 @@ button
 	border-radius: 5px
 	text-align: center
 	line-height: 70px
-	box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.25)
+	box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8)
+	// box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.25)
 	transition: all 0.3s ease
 	&:hover
-		box-shadow: 0px 0px 10px 5px rgba(51, 51, 51, 0.25)
-		color: $secondary_color
-		background-color: $primary_color
+		box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1), inset 2px 2px 6px rgba(0, 0, 0, 0.8)
+		// box-shadow: 0px 0px 10px 5px rgba(51, 51, 51, 0.25)
+		// color: $secondary_color
+		color: #00fff1
+		text-shadow: 0 0 5px #00fff1, 0 0 20px #00fff1
+		// background-color: $primary_color
 // .secondary-btn
 // 	background-color: $secondary_color
 // 	&:hover

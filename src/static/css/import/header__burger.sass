@@ -13,10 +13,13 @@
 		// left: 47%
 		// top: 18px
 	cursor: pointer
-	border-radius: 5px
-	border: 2px solid $primary_color
+	border-radius: 10px
+	// border: 2px solid $primary_color
+	box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8)
 	&:hover
-		border: 2px solid #00fff1
+		box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1), inset 2px 2px 6px rgba(0, 0, 0, 0.8)
+	// &:hover
+	// 	border: 2px solid #00fff1
 	// &:hover
 	// 	color: #00fff1
 	// 	text-shadow: 0 0 5px #00fff1, 0 0 20px #00fff1
@@ -24,15 +27,15 @@
 .header__burger
 	span
 		position: absolute
-		background-color: $primary_color
+		background-color: $text_color
 		left: 17px
 		width: 34%
 		height: 2px
-		top: 22px
+		top: 24px
 .header__burger::before,
 .header__burger::after
 	content: ''
-	background-color: $primary_color
+	background-color: $text_color
 	position: absolute
 	width: 34%
 	height: 2px
@@ -47,11 +50,14 @@
 	top: 1%
 	left: 1%
 .header__burger.active span
+	// background-color: $text_color
 	transform: scale(0)
 .header__burger.active::before
+	// background-color: $text_color
 	transform: rotate(45deg)
-	top: 22px
+	top: 24px
 .header__burger.active::after
+	// background-color: $text_color
 	transform: rotate(-45deg)
-	bottom: 22px
+	bottom: 24px
 // ========= Burger Menu ============ //

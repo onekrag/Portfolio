@@ -7,13 +7,13 @@
 //   infinite: true,
 // });
 $(document).ready(() => {
-  $('.header__burger').click(function (event) {
-    $('.header__burger,.header').toggleClass('active');
-    $('body').toggleClass('lock');
-  });
+	$(".header__burger,.header__nav_link").click(function (event) {
+		$(".header__burger,.header").toggleClass("active");
+		$("body").toggleClass("lock");
+	});
 
-  //   $('.header').click(function (event) {
-  //     $('.header__burger,.header').toggleClass('active');
-  //     $('body').toggleClass('lock');
-  //   });
+	//   $('.header').click(function (event) {
+	//     $('.header__burger,.header').toggleClass('active');
+	//     $('body').toggleClass('lock');
+	//   });
 });
